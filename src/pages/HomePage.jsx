@@ -6,6 +6,9 @@ const HomePage = ({ videosData, togglePlaylist, selectVideo }) => {
   
   return (
     <div className='py-[60px] mx-[16px] sm:mx-[100px]'>
+      <h1 className='text-[40px] font-bold my-6 sm:my-4'>
+        Music Videos
+      </h1>
       <div className="grid grid-cols-1 sm:grid-cols-3 overflow-x-auto gap-16 w-full">
       {
         videosData.map(item => (

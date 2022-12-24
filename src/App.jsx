@@ -26,13 +26,18 @@ function App() {
     console.log(selectedVideo)
   }
 
+  const playlists = videosData.filter(item => item.addedToPlaylists === true)
+
+
+  // console.log(playlists);
+
   return (
     <div className="">
-      <Navbar videosData={videosData} />
+      <Navbar playlists={playlists} />
       <Routes>
         <Route path='/' element={ <HomePage videosData={videosData} selectVideo={selectVideo} togglePlaylist={togglePlaylist} /> } />
         <Route path='/video' element={<VideoPage selectedVideo={selectedVideo} /> } />
-        <Route path='/playlists' element={ <PlaylistsPage /> } />
+        <Route path='/playlists' element={ <PlaylistsPage togglePlaylist={togglePlaylist} selectVideo={selectVideo} playlists={playlists} /> } />
       </Routes>
       {/* <HomePage /> */}
       {/* <Footer /> */}

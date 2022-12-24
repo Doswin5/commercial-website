@@ -11,11 +11,11 @@ export const navLinks = [
     link: '/playlists',
     linkName: 'Playlists',
   },
-  {
-    id: 3,
-    link: '/video',
-    linkName: 'Video',
-  },
+  // {
+  //   id: 3,
+  //   link: '/video',
+  //   linkName: 'Video',
+  // },
 ]
 
 export const data = [
@@ -37,7 +37,7 @@ export const data = [
     video: video2,
     videoCover: cover1,
     duration: '03:47',
-    addedToPlaylists: true,
+    addedToPlaylists: false,
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ export const data = [
     video: video3,
     videoCover: cover1,
     duration: '04:32',
-    addedToPlaylists: true,
+    addedToPlaylists: false,
   },
   {
     id: 4,
@@ -67,7 +67,7 @@ export const data = [
     video: video5,
     videoCover: cover1,
     duration: '03:16',
-    addedToPlaylists: true,
+    addedToPlaylists: false,
   },
   {
     id: 6,
