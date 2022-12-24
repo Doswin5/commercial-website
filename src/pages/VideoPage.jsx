@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const VideoPage = ({ selectedVideo }) => {
   return (
     <div className='relative top-0 h-[100vh] bg-yellow-200'>
-      <video className='w-full h-[100vh] object-cover' autoPlay loop poster={selectedVideo.videoCover}>
+      <video className='w-full h-[100vh] object-cover' autoPlay loop>
         <source src={selectedVideo.video} type='video/mp4' />
         <source src={selectedVideo} type="video/ogg" />
       </video>

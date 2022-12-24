@@ -15,7 +15,7 @@ const HomePage = ({ videosData, togglePlaylist, selectVideo }) => {
           <div key={item.id} className="flex flex-col border border-black cursor-pointer">
           <Link to='/video'>
             <div onClick={() => selectVideo(item.id)} className="w-full relative">
-              <video className='w-full object-cover h-[300px]' autoPlay loop muted poster={item.videoCover}>
+              <video className='w-full object-cover h-[300px]' autoPlay loop muted>
                 <source src={item.video} type='video/mp4' />
                 <source src={item.video} type="video/ogg" />
               </video>
